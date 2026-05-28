@@ -1,6 +1,6 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema",
-	"$id": "https://raw.githubusercontent.com/jgilman1337/resume-schema/refs/heads/master/schema.json",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://raw.githubusercontent.com/ellisgl/resume-schema/refs/heads/master/schema.json",
 	"title": "Resume Schema",
 	"version": "2.0.0",
 	"type": "object",
@@ -78,7 +78,7 @@
 						"type": "string",
 						"description": "The location the job is/was, e.g. 'Menlo Park, CA'. If the job is/was remote, specify 'Remote'."
 					},
-					"description": {
+					"^description$": {
 						"type": "string",
 						"description": "A short, 1 sentence maximum description of the company, e.g. 'Social Media Company'."
 					},
@@ -88,7 +88,7 @@
 					},
 					"url": {
 						"type": "string",
-						"description": "The relevant URL of the company's homepage, e.g. 'http://facebook.example.com'.",
+						"description": "The relevant URL of the company's homepage, e.g. 'https://facebook.example.com'.",
 						"format": "uri"
 					},
 					"startDate": {
@@ -137,7 +137,7 @@
 					},
 					"url": {
 						"type": "string",
-						"description": "The relevant URL of the volunteer organization's homepage, e.g. 'http://redcross.example.com'.",
+						"description": "The relevant URL of the volunteer organization's homepage, e.g. 'https://redcross.example.com'.",
 						"format": "uri"
 					},
 					"startDate": {
@@ -186,7 +186,7 @@
 					},
 					"url": {
 						"type": "string",
-						"description": "The relevant URL of the institution's homepage, e.g. 'http://example.com.edu'.",
+						"description": "The relevant URL of the institution's homepage, e.g. 'https://example.com.edu'.",
 						"format": "uri"
 					},
 					"subInstitutionUrl": {
@@ -210,7 +210,7 @@
 							"type": "object",
 							"additionalProperties": false,
 							"properties": {
-								"type": {
+								"^type$": {
 									"type": "string",
 									"description": "The broad education type for this program.",
 									"enum": [
@@ -336,7 +336,7 @@
 				"type": "object",
 				"additionalProperties": false,
 				"properties": {
-					"title": {
+					"^title$": {
 						"type": "string",
 						"description": "The title of the award, e.g. 'Nobel Peace Prize'."
 					},
@@ -380,7 +380,7 @@
 					},
 					"url": {
 						"type": "string",
-						"description": "The relevant URL of the awarding organization's homepage, e.g. 'http://example.com'.",
+						"description": "The relevant URL of the awarding organization's homepage, e.g. 'https://example.com'.",
 						"format": "uri"
 					},
 					"id": {
@@ -416,7 +416,7 @@
 					},
 					"url": {
 						"type": "string",
-						"description": "e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html",
+						"description": "e.g. https://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html",
 						"format": "uri"
 					},
 					"summary": {
@@ -529,7 +529,7 @@
 						"type": "string",
 						"description": "The name of the project, e.g. 'The World Wide Web'."
 					},
-					"description": {
+					"^description$": {
 						"type": "string",
 						"description": "A short summary of project in 1-3 sentences. e.g. 'Collated works of 2017'."
 					},
@@ -557,7 +557,7 @@
 					"url": {
 						"type": "string",
 						"format": "uri",
-						"description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
+						"description": "e.g. https://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
 					},
 					"roles": {
 						"type": "array",
@@ -570,9 +570,9 @@
 					},
 					"entity": {
 						"type": "string",
-						"description": "The relevant company/entity affiliations, if any, e.g. 'greenpeace', 'corporationXYZ'."
+						"description": "The relevant company/entity affiliations, if any, e.g. 'Greenpeace', 'corporationXYZ'."
 					},
-					"type": {
+					"^type$": {
 						"type": "string",
 						"description": " e.g. 'volunteering', 'presentation', 'talk', 'application', 'conference'"
 					}
